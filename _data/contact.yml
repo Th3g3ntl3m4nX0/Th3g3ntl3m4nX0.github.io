@@ -12,7 +12,6 @@
 
 - type: linkedin
   icon: "fas fa-linkedin"
-  noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
