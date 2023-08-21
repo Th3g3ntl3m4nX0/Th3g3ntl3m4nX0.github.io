@@ -6,23 +6,23 @@
 - type: twitter
   icon: "fab fa-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+#- type: email
+ # icon: "fas fa-envelope"
+  #noblank: true # open link in current tab
 
-- type: rss
+#- type: rss
   icon: "fas fa-rss"
   noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 - type: mastodon
-  icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-  url:  'https://mastodon.social/@th3g3ntl3m4n'                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+  icon: "fab fa-mastodon"   # icons powered by <https://fontawesome.com/>
+  url:  'https://mastodon.social/@th3g3ntl3m4n'         # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
 - type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
- url:  ' https://www.linkedin.com/in/james-macharia1/'                  # Fill with your Linkedin homepage
+  icon: "fab fa-linkedin"  # icons powered by <https://fontawesome.com/>
+ url:  ' https://www.linkedin.com/in/james-macharia1/'        # Fill with your Linkedin homepage
 #
 - type: stack-overflow
- icon: 'fab fa-stack-overflow'
-  url:  'https://stackoverflow.com/users/22424241/just-a-techie'                  # Fill with your stackoverflow homepage
+ icon: "fab fa-stack-overflow"
+  url:  'https://stackoverflow.com/users/22424241/just-a-techie'     # Fill with your stackoverflow homepage
