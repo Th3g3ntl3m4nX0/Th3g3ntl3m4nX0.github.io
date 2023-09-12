@@ -24,9 +24,10 @@ tags: [ctf, nmap, base64, enumeration, gobuster, exploitDB, ssh]     # TAG names
 I started the reconnaissance by running a port scan with Nmap, checking default scripts and testing for vulnerabilities.  We have used -sC for default 
 scripts, -sV to enumerate all versions, -oA to output all format in a file called initial and finally it’s IP address. Here is the results:
 
-```bash 
+```shell
+
 ┌──(root㉿kali)-[/home/th3g3ntl3m4n/PGPLAY]
-└─# nmap -sC -sV -oA initial 192.168.155.92 
+└─$ nmap -sC -sV -oA initial 192.168.155.92 
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-12 11:44 EAT
 Nmap scan report for 192.168.155.92
 Host is up (0.20s latency).
@@ -43,6 +44,8 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 17.54 seconds
+Nmap done: 1 IP address (1 host up) scanned in 17.54 seconds.
+
+```
                                                             
   We see `ssh` port 22 open and `http` port 80 open which is running an Apache 2.2.22 web server.                                                           
