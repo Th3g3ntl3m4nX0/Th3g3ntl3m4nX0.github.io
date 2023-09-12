@@ -165,3 +165,8 @@ We ran the executable file a.out on the target machine, which gives us the root 
 
 We now have to find the final flag to finish the challenge. We need to change the current directory to root and find the flag file, which can be seen in the screenshot given below.
 ![image](../../assets/image/posts/cybersploit/pic114.png)
+
+
+#### This bring us to the end of the CTF challenge... I hope you enjoyed completing this challenge with me. Stay tuned for many more CTF solutions to come
+
+`STAY CURIOUS AND KEEP LEARNING`
