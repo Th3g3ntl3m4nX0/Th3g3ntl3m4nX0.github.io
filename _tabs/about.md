@@ -15,10 +15,6 @@ I am trying to document things as I learn.
   <tr>
     <td>
 <script src="https://tryhackme.com/badge/280861"></script>
-</td>
-</tr>
-<tr>
-<td>
 <script src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="th3g3ntl3m4nX0" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
     </td>
   </tr>
