@@ -167,6 +167,7 @@ We now have to find the final flag to finish the challenge. We need to change th
 ![image](../../assets/image/posts/cybersploit/pic14.png)
 
 
-#### This bring us to the end of the CTF challenge... I hope you enjoyed completing this challenge with me. Stay tuned for many more CTF solutions to come
+This bring us to the end of the CTF challenge... I hope you enjoyed completing this challenge with me. Stay tuned for many more walkthroughs.
+                        #### Cheers
 
 `STAY CURIOUS AND KEEP LEARNING`
