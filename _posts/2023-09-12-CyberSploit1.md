@@ -1,19 +1,19 @@
 ---
 
 
-title: "CyberSploit1 "
+title: "CyberSploit1 Walkthrough"
 date: 2023-9-12 
 img_path: ../../assets/image
 image: banner.png
-categories: [Proving grounds, Easy,Privesc]
-tags: [ctf, nmap, base64, enumeration, gobuster, exploitDB, ssh]     # TAG names should always be lowercase
+categories: [Proving grounds, Easy,Privesc,Linux Kernel]
+tags: [ctf, nmap, base64, enumeration, gobuster, exploitDB, ssh, ubuntu, red teaming]     # TAG names should always be lowercase
 
 
 ---
 
 
 
-> **[Cybersploit1](https://portal.offsec.com/labs/play)**  is a boot2root Linux Machine from Offsec Proving Grounds. it's also a fairly simple linux box. We shall start with `nmap` scan to see the ports open on the machine. We will later  use `gobuster` for directory brute force and from there we would find where you can get something interesting to gid deeper. So we shall login with `SSH`  which will give us the initial access to the system. Finally we shall do privilege escalation by uploading the 'overlayfs' Local Privilege Escalation  exploit from `ExolitDB` to get root privileges.
+> **[Cybersploit1](https://portal.offsec.com/labs/play)**  is a boot2root Linux Machine from Offsec Proving Grounds. it's also a fairly simple linux box. We shall start with `nmap` scan to see the open ports on the machine. We will later  use `gobuster` for directory brute force and from there we will find where you we get something interesting to dig deeper. So we shall login with `SSH`  which will give us the initial access to the system. Finally we shall do privilege escalation by uploading the 'overlayfs' Local Privilege Escalation  exploit from `ExolitDB` to get root privileges.
 {: .prompt-tip }
 
 `Ready, set, pwn!` 
@@ -117,7 +117,7 @@ So far, we have identified a username `itsskv` from the HTML page and a flag fil
 
 We can see that the SSH login was successful and the flag worked as the password for SSH login.
 
-After logging into the target machine, we checked the user folder and found the second flag file, “flag2.txt”. We opened the file with the cat command, and gave us  "Your flag is in another file..." We can also see that there is another file named "local.txt" and after using the cat command against the file we successfully got our flag, which can be seen in the following screenshot:
+After logging into the target machine, we checked the user folder and found the second flag, “flag2.txt”. We opened the file with the cat command, and gave us  "Your flag is in another file..."  We can also see that there is another file named "local.txt" and after using the cat command against the file we successfully got our flag, which can be seen in the following screenshot:
 
 ![image](../../assets/image/posts/cybersploit/pic6.png)
 
@@ -168,6 +168,6 @@ We now have to find the final flag to finish the challenge. We need to change th
 
 
 This bring us to the end of the CTF challenge... I hope you enjoyed completing this challenge with me. Stay tuned for many more walkthroughs.
-                        #### Cheers
+##### Cheers
 
 `STAY CURIOUS AND KEEP LEARNING`
