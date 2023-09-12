@@ -26,7 +26,7 @@ scripts, -sV to enumerate all versions, -oA to output all format in a file calle
 
 ```shell
 
-┌──(root㉿kali)-[/home/th3g3ntl3m4n/PGPLAY]
+┌──(root㉿kali)-[~]
 └─$ nmap -sC -sV -oA initial 192.168.155.92 
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-12 11:44 EAT
 Nmap scan report for 192.168.155.92
