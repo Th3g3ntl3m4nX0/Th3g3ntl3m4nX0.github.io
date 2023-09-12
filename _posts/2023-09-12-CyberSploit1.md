@@ -94,3 +94,8 @@ Progress: 4614 / 4615 (99.98%)
                                                                     
   ```
 We're interested with the ones which gave us a `200 OK` Status code where the home page simply has the GIF we see at the`index or index.html` page but `robots or robots.txt` might have some interesting information. Le'ts find out
+Robots.txt has what seems to be base64 decoded
+![image](../../assets/image/posts/cybersploit/pic3.png)
+Now after Decoding this is what we get which really looks like a flag but it's not.
+![image](../../assets/image/posts/cybersploit/pic4.png)
+Interestingly this is our ssh password.
