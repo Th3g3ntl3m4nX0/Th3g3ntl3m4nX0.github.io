@@ -27,7 +27,7 @@ scripts, -sV to enumerate all versions, -oA to output all format in a file calle
 ```shell
 
 ┌──(root㉿kali)-[~]
-└─$ nmap -sC -sV -oA initial 192.168.155.92 
+└─$nmap -sC -sV -oA initial 192.168.155.92 
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-12 11:44 EAT
 Nmap scan report for 192.168.155.92
 Host is up (0.20s latency).
@@ -63,7 +63,7 @@ Nmap done: 1 IP address (1 host up) scanned in 17.54 seconds.
   Here are the Results
   ```shell                                                                                                                                                                                            
 ┌──(root㉿kali)-[~]
-└─$  gobuster dir -u http://192.168.155.92/ -w /usr/share/wordlists/dirb/common.txt                    
+└─$gobuster dir -u http://192.168.155.92/ -w /usr/share/wordlists/dirb/common.txt                    
 ===============================================================
 Gobuster v3.5
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
