@@ -52,7 +52,10 @@ Nmap done: 1 IP address (1 host up) scanned in 17.54 seconds.
 
 
   Looking at port 80 on the web browser, we see a GIF. 
-  ![image](/assets/image/pic1.png)_image_
+  ![image](/assets/image/posts/cybersploit/pic1.png)
 
   Looking at the page source, I found a username `itsskv`. This might be useful later on!
-  ![image](/assets/image/pic2.png)_image_
+  ![image][def]
+
+
+[def]: /assets/image/posts/cybersploit/pic2.png
