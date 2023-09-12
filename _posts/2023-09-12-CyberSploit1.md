@@ -13,7 +13,7 @@ tags: [ctf, nmap, base64, enumeration, gobuster, exploitDB, ssh]     # TAG names
 
 
 
-> **[Cybersploit1](https://portal.offsec.com/labs/play)**  is a boot2root VM from Offsec Proving Grounds. it's also a fairly simple linux box. We shall start with `nmap` scan to see the ports open on the machine. We will later  use `gobuster` for directory brute force and from there we would find where you can get something interesting to gid deeper. So we shall login with `SSH`  which will give us the initial access to the system. Finally we shall do privilege escalation by uploading the 'overlayfs' Local Privilege Escalation  exploit from `ExolitDB` to get root privileges.
+> **[Cybersploit1](https://portal.offsec.com/labs/play)**  is a boot2root Linux Machine from Offsec Proving Grounds. it's also a fairly simple linux box. We shall start with `nmap` scan to see the ports open on the machine. We will later  use `gobuster` for directory brute force and from there we would find where you can get something interesting to gid deeper. So we shall login with `SSH`  which will give us the initial access to the system. Finally we shall do privilege escalation by uploading the 'overlayfs' Local Privilege Escalation  exploit from `ExolitDB` to get root privileges.
 {: .prompt-tip }
 
 `Ready, set, pwn!` 
@@ -94,8 +94,29 @@ Progress: 4614 / 4615 (99.98%)
                                                                     
   ```
 We're interested with the ones which gave us a `200 OK` Status code where the home page simply has the GIF we see at the`index or index.html` page but `robots or robots.txt` might have some interesting information. Le'ts find out
-Robots.txt has what seems to be base64 decoded
+
+Robots.txt has what seems to be base64 encoded
+
+
 ![image](../../assets/image/posts/cybersploit/pic3.png)
+
 Now after Decoding this is what we get which really looks like a flag but it's not.
+
 ![image](../../assets/image/posts/cybersploit/pic4.png)
+
+
 Interestingly this is our ssh password.
+
+## Initial Access
+We took note of the identified username and kept looking for other possibilities to help us exploit the target machine, but nothing more could be found.
+
+So far, we have identified a username `itsskv` from the HTML page and a flag file (which is our password). But as we know from the port scanning step, SSH port 22 was also open on the target machine. As we have a valid username but no clue about the password was found, we tried using the flag as password for logging into the SSH, which can be seen below.
+
+![image](../../assets/image/posts/cybersploit/pic5.png)
+
+
+We can see that the SSH login was successful and the flag worked as the password for SSH login.
+
+After logging into the target machine, we checked the user folder and found the second flag file, “flag2.txt”. We opened the file with the cat command, and gave us  "Your flag is in another file..." We can also see that there is another file named "local.txt" and after using the cat command against the file we successfully got our flag, which can be seen in the following screenshot:
+
+![image](../../assets/image/posts/cybersploit/pic6.png)
