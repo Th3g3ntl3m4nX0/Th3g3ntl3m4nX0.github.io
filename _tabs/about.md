@@ -14,6 +14,10 @@ I am trying to document things as I learn.
 ## Stats⚡ 
 <table>
   <tr>
+  <th>Tryhackme</th>
+    <th>Buy Me Coffee</th>
+    </tr>
+    <tr>
   <td>
 <script src="https://tryhackme.com/badge/280861"></script>
 </td>
