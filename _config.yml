@@ -23,10 +23,10 @@ title: Th3g3ntl3m4nX0 # the main title
 tagline: Security Analyst| CTf Player| Red Teamer # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Write-ups, WalkThroughs, CheatSheets....
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://th3g3ntl3m4nx0.github.io/"
 
 github:
   username: Th3g3ntl3m4nX0 # change to your github username
