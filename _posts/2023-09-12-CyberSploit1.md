@@ -120,3 +120,19 @@ We can see that the SSH login was successful and the flag worked as the password
 After logging into the target machine, we checked the user folder and found the second flag file, “flag2.txt”. We opened the file with the cat command, and gave us  "Your flag is in another file..." We can also see that there is another file named "local.txt" and after using the cat command against the file we successfully got our flag, which can be seen in the following screenshot:
 
 ![image](../../assets/image/posts/cybersploit/pic6.png)
+
+## Privilege Escalation
+`Let's get root`
+In order to get the root access, we start enumerating our target machine through the SSH user access. We ran a few commands to gather information about the operating system and the kernel version,Commands used:
+    `uname -a`
+    `cat /etc/issue`
+We used the `uname –a` command to check the kernel version of the target machine. After that, we read the `etc/issue` file to check the operating system details. The current operating system is Ubuntu and the target machine is running on version 12.04.5.
+which can be seen in the screenshot below.
+
+![image](../../assets/image/posts/cybersploit/pic7.png)
+
+
+We searched from the web for an available exploit for this configuration, and fortunately, we found a local privilege escalation vulnerability in the operating system. The search result can be seen in the following screenshot:
+
+![image](../../assets/image/posts/cybersploit/pic8.png)
+
