@@ -123,6 +123,8 @@ After logging into the target machine, we checked the user folder and found the 
 
 ## Privilege Escalation
 `Let's get root`
+
+
 In order to get the root access, we start enumerating our target machine through the SSH user access. We ran a few commands to gather information about the operating system and the kernel version,Commands used:
     `uname -a`
     `cat /etc/issue`
@@ -136,3 +138,30 @@ We searched from the web for an available exploit for this configuration, and fo
 
 ![image](../../assets/image/posts/cybersploit/pic8.png)
 
+
+We first downloaded the exploit on the attacker machine.
+
+![image](../../assets/image/posts/cybersploit/pic9.png) 
+
+We later started a python http server for us to be able to download the exploit from the target Machine.
+
+![image](../../assets/image/posts/cybersploit/pic10.png) 
+
+
+On the target machine, we first changed the current directory to tmp and then again used the wget utility to download the payload file from our attacker machine. 
+
+![image](../../assets/image/posts/cybersploit/pic11.png)
+
+
+We then used the gcc compiler to compile the exploit file. When the compilation process was completed the executable file was generated and saved as a.out. These steps can be seen in the following screenshot.
+
+![image](../../assets/image/posts/cybersploit/pic12.png)
+
+
+We ran the executable file a.out on the target machine, which gives us the root access. 
+
+![image](../../assets/image/posts/cybersploit/pic13.png)
+
+
+We now have to find the final flag to finish the challenge. We need to change the current directory to root and find the flag file, which can be seen in the screenshot given below.
+![image](../../assets/image/posts/cybersploit/pic114.png)
