@@ -56,3 +56,41 @@ Nmap done: 1 IP address (1 host up) scanned in 17.54 seconds.
 
   Looking at the page source, I found a username `itsskv`. This might be useful later on!
   ![image](../../assets/image/posts/cybersploit/pic2.png)
+
+
+  Since `http` port 80 is open, we need to do some directory bruteforcing and look at what directories are accessible. We're going to use `gobuster` which is a Directory/File, DNS and VHost busting tool written in Go.
+
+  Here are the Results
+  ```shell                                                                                                                                                                                            
+┌──(root㉿kali)-[~]
+└─$  gobuster dir -u http://192.168.155.92/ -w /usr/share/wordlists/dirb/common.txt                    
+===============================================================
+Gobuster v3.5
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.155.92/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.5
+[+] Timeout:                 10s
+===============================================================
+2023/09/12 12:37:50 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 291]
+/.hta                 (Status: 403) [Size: 286]
+/.htpasswd            (Status: 403) [Size: 291]
+/cgi-bin/             (Status: 403) [Size: 290]
+/index                (Status: 200) [Size: 2333]
+/index.html           (Status: 200) [Size: 2333]
+/robots               (Status: 200) [Size: 53]
+/robots.txt           (Status: 200) [Size: 53]
+/server-status        (Status: 403) [Size: 295]
+Progress: 4614 / 4615 (99.98%)
+===============================================================
+2023/09/12 12:40:00 Finished
+===============================================================
+                                                                    
+  ```
+We're interested with the ones which gave us a `200 OK` Status code where the home page simply has the GIF we see at the`index or index.html` page but `robots or robots.txt` might have some interesting information. Le'ts find out
