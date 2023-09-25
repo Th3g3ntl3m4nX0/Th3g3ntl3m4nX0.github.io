@@ -10,6 +10,12 @@ Hey there!
 I am th3g3ntl3m4n, a Curious Cybersecurity Enthusiast with a fascination for unraveling the mysteries of the digital World. Constantly exploring the intricacies of threat landscapes, encryption protocols, and ethical hacking. Eager to connect with fellow enthusiasts, experts, and professionals to exchange knowledge, discuss emerging trends, and collectively strengthen our digital defenses. Let's join forces in the ever-evolving world of cybersecurity!
 I am trying to document things as I learn.
 
+## Connect with me:
+ [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abdoulaye-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/james-macharia-117306201/)
+ [![Twitter](https://img.shields.io/badge/Twitter-Abdoulaye-blue?style=flat-square&logo=twitter)](https://www.twitter.com/i_amslimjimmy/)
+ [![HackTheBox](https://img.shields.io/badge/HackTheBox-nenandjbhata-lime?style=flat-square&logo=hackthebox)](https://app.hackthebox.com/profile/852823)
+ [![TryHackMe](https://img.shields.io/badge/TryHackMe-bloman-navy?style=flat-square&logo=tryhackme)](https://tryhackme.com/p/Jimmywach)
+
 
 ## Stats⚡ 
 <table>
