@@ -14,7 +14,7 @@ I am trying to document things as I learn.
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-James-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/james-macharia-117306201/)
  [![Twitter](https://img.shields.io/badge/Twitter-Th3g3ntl3m4n-blue?style=flat-square&logo=twitter)](https://www.twitter.com/i_amslimjimmy/)
  [![HackTheBox](https://img.shields.io/badge/HackTheBox-th3g3ntl3m4nx0-lime?style=flat-square&logo=hackthebox)](https://app.hackthebox.com/profile/852823)
- [![TryHackMe](https://img.shields.io/badge/TryHackMe-Jimmywach-navy?style=flat-square&logo=tryhackme)](https://tryhackme.com/p/Jimmywach)
+ [![TryHackMe](https://img.shields.io/badge/TryHackMe-Jimmywach-red?style=flat-square&logo=tryhackme)](https://tryhackme.com/p/Jimmywach)
 
 
 ## Stats⚡ 
