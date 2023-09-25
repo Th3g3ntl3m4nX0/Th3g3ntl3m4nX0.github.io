@@ -20,8 +20,9 @@ I am trying to document things as I learn.
 ## Stats⚡ 
 <table>
   <tr>
-  <th>Tryhackme</th>
-    <th>Buy Me Coffee</th>
+  <th>TryHackMe</th>
+    <th>Buy Me A Coffee</th>
+    <th>HackTheBox</th>
     </tr>
     <tr>
   <td>
@@ -29,6 +30,9 @@ I am trying to document things as I learn.
 </td>
 <td>
 <script src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="th3g3ntl3m4nX0" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+</td>
+<td>
+<script src="https://www.hackthebox.eu/badge/852823"></script>
 </td>
   </tr>
 </table>
